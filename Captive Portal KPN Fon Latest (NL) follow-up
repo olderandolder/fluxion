@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+
+<!-- Mirrored from kpn.portal.fon.com/jcp/0200002E3F7E0008CA4E9099?res=welcome_sg&nas_ip_address=213.75.201.87&useurl=http%3A%2F%2Fdetectportal.firefox.com%2Fsuccess.txt by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jan 2019 16:53:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>KPN WiFi with Fon - Home</title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="themes/kpn-residential/static/desktop/css/main.css" media="screen" />
+<!-- GDPR -->
+<link rel="stylesheet" type="text/css" href="themes/kpn-residential/static/desktop/css/gdpr.css" media="screen" />
+<!-- Cookies Consent -->
+  <link rel="stylesheet" type="text/css" href="themes/kpn-residential/static/desktop/css/cookiesconsent.css" media="screen" />
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="themes/kpn-residential/static/desktop/images/favicon.ico" />
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/jquery.atooltip.js"></script>
+<!-- Cookies Consent -->
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/cookiesconsent.js"></script>
+<!-- // GDPR JS -->
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/gdprSelect.js"></script>
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/gdprModal.min.js"></script>
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/gdprShowTerms.js"></script> 
+
+
+<script type="text/javascript">
+    $(function () {
+        $('.bubbleInfo').each(function () {
+            var distance = 5;
+            var time = 250;
+            var hideDelay = 500;
+
+            var hideDelayTimer = null;
+
+            var beingShown = false;
+            var shown = false;
+            var trigger = $('.trigger', this);
+            var info = $('.popup', this).css('opacity', 0);
+
+
+            $([trigger.get(0), info.get(0)]).mouseover(function () {
+                if (hideDelayTimer) clearTimeout(hideDelayTimer);
+                if (beingShown || shown) {
+                    // don't trigger the animation again
+                    return;
+                } else {
+                    // reset position of info box
+                    beingShown = true;
+          
+                    info.css({
+                        top: -85,
+                        left: 0,
+                        display: 'block'
+                    }).animate({
+                        top: '-=' + distance + 'px',
+                        opacity: 1
+                    }, time, 'swing', function() {
+                        beingShown = false;
+                        shown = true;
+                    });
+                }
+
+                return false;
+            }).mouseout(function () {
+                if (hideDelayTimer) clearTimeout(hideDelayTimer);
+                hideDelayTimer = setTimeout(function () {
+                    hideDelayTimer = null;
+                    info.animate({
+                        top: '-=' + distance + 'px',
+                        opacity: 0
+                    }, time, 'swing', function () {
+                        shown = false;
+                        info.css('display', 'none');
+                    });
+
+                }, hideDelay);
+
+                return false;
+            });
+        });
+    });
+    
+    </script>
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/jquery.reveal.js"></script>
+<script type="text/javascript" src="themes/kpn-residential/static/desktop/js/updateYear.js"></script>
+
+<script type="text/javascript">
+<!--
+	function redirect(select) {
+		language = select[select.selectedIndex].value;
+		var url = document.URL;
+		if (url.lastIndexOf('?') == -1) {
+			url += '?lang=' + language;
+		} else {
+			var index = url.lastIndexOf('lang=');
+			if (index == -1) {
+				url += '&lang=' + language;
+			} else {
+				var pre = url.substring(0, index);
+				url2 = url.substring(index, url.length);
+				var index2 = url2.lastIndexOf('&');
+				var post = '';
+				if (index2 != -1) {
+					post = url2.substring(index2, url.length);
+				}
+				url = pre + 'lang=' + language + post;
+			}
+		}
+		location.href = url;
+	}
+	-->
+</script>
+
+<script type="text/javascript">
+  document.createElement('header');
+  document.createElement('nav');
+  document.createElement('article');
+  document.createElement('section');
+  document.createElement('footer');
+</script>
+
+<!--[if IE]><script src="js/html5.js" th:href="@{desktop/js/html5.js}"></script><![endif]-->
+
+</head>
+
+<!-- Cookies Consent -->
+<div id="cookiesConsent">
+    <p>Fon has updated its cookie policy. This website uses cookies to improve your browsing experience and to show you relevant advertising. These cookies come from us and third parties. You can change the cookie settings at any time. <a href="https://fon.com/legal/">Read More</a>.</p>
+    <div><a href="#" class="acceptButton">Accept</a></div>
+</div>
+
+<body class="home">
+    
+<div class="container">
+  
+
+<header class="header">
+    <div class="wrap">
+      <div class="logoFon"></div>         
+    </div>
+</header>   
+
+ <nav>
+    <ul>
+<li><a href="0200002E3F7E0008CA4E90990055.html?res=welcome_sg&amp;nas_ip_address=213.75.201.87&amp;useurl=http%3A%2F%2Fdetectportal.firefox.com%2Fsuccess.txt">Home </a></li>
+<li><a href="#" class="big-link" data-reveal-id="aboutpartner" data-animation="fade">About KPN </a></li>
+<li><a href="#" class="big-link" data-reveal-id="aboutfon" data-animation="fade">About Fon </a></li>
+</ul>
+  <span id="languageSelector">
+     <form action="https://kpn.portal.fon.com/jcp/*" method="post" class="lang">
+            <!-- <label for="language" th:text="#{header.language.label}">Change
+              language</label> --> 
+                           <select name="lang" id="language_culture" onchange="redirect(this)">
+                           <option value="nl_NL">Nederlands</option>
+                           <option value="en_GB" selected="selected">English</option>
+          </select>
+          </form>
+    </span>             
+            </nav>
+    
+<div class="wrap">
+           
+  <div class="main" role="main">
+    
+    <div class="col1 left">
+
+   <div class="login">
+
+           <form id="loginForm" action="https://kpn.portal.fon.com/jcp/0200002E3F7E0008CA4E9099?res=login_sg&amp;nas_ip_address=213.75.201.87&amp;useurl=http%3A%2F%2Fdetectportal.firefox.com%2Fsuccess.txt" method="post">
+             <h2>Log in and get online here</h2>
+
+              <!-- // GDPR radiobuttons -->
+              <fieldset id="gdprRadio">
+                <span>
+                    <input type="radio" name="chooseUser" id="partnerUsers" value="partnersusers" class="partnersUsers" />
+                    <span>KPN</span>
+								</span>
+								<span>
+                  <input type="radio" name="chooseUser" id="passUsers" value="passusers" class="passUsers" />
+                  <span>Pass & Fon Users</span>
+								</span>
+								<span>
+                  <input type="radio" name="chooseUser" id="otherUsers" value="otherUsers" class="otherUsers" />
+                  <span>Others</span>
+								</span>
+							</fieldset>
+
+              
+               <fieldset class="bubbleInfo">
+               <div class="popup">If you are a KPN user please use <strong>username@kpn-fon.nl</strong>, if you’re a fon community member please use your fon credentials</div>
+               <label for="user">Username <span class="trigger help"></span></label>
+             <input id="user" name="UserName" value="" type="text" placeholder="username@kpn-fon.nl" />
+              </fieldset>
+              
+              <fieldset class="bubbleInfo">
+               <div class="popup">If you are a KPN Customer please visit <a href="http://www.kpn.com/fon" target="_blank">www.kpn.com/fon</a> and follow the instructions to recover your password. For Fon users, please use <a href="http://corp.fon.com/forgot" target="_blank">corp.fon.com/forgot</a>	</div>
+              <label for="password">Password <span class="trigger help"></span></label>
+              <input id="password" name="Password" value="" type="password" autocomplete="off" placeholder="Password" />
+              </fieldset>
+              
+            <fieldset class="checkbox">
+              <input type="checkbox" name="rememberMe" id="remember" value="true" /><input type="hidden" name="_rememberMe" value="on" />
+              <span>Remember me</span>
+            </fieldset>
+              
+             <fieldset>
+              <!-- // CDPR fake button -->
+              <a href="#ex1" class="gdpr_submit">Login</a>
+              <span class="gdpr_realsubmit">
+                  <input type="hidden" name="language" id="language" value="en_US" />
+                  <input value="Login" type="submit" />
+              </span>
+            </fieldset>
+                          
+            </form>
+        </div><!-- // login -->
+
+        <div class="promoBox">
+
+      <div class="promo"><a onmousedown="javascript:_paq.push(['trackPageView', 'cp_loggedoff_promocode']);" href="https://kpn.purchases.fon.com/purchase-access?WISPURL=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Drpp-login_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;WISPURLHOME=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Dwelcome_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;EXPIRATION_DATE=1546966718267&amp;SMSCONFIRM=false&amp;LANGUAGE=en_US&amp;AP_MAC=02-00-00-2E-3F-7E&amp;DEV_MAC=00-08-CA-4E-90-99&amp;PRODUCT_ID=Promocode&amp;TOKEN=4258428a5ec9be8d50804ab2b444b790d4552e43&amp;LANGUAGE=en_US">Redeem a promocode</a></div>
+
+      <div class="promo"><a onmousedown="javascript:_paq.push(['trackPageView', 'cp_loggedoff_freetrial']);" href="https://kpn.purchases.fon.com/purchase-access?WISPURL=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Drpp-login_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;WISPURLHOME=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Dwelcome_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;EXPIRATION_DATE=1546966718267&amp;SMSCONFIRM=false&amp;LANGUAGE=en_US&amp;AP_MAC=02-00-00-2E-3F-7E&amp;DEV_MAC=00-08-CA-4E-90-99&amp;PRODUCT_ID=FreeTrialPass_15min_FonComm&amp;TOKEN=a8a0ea7b598c789e7ec44f810d200a89b222ed45&amp;LANGUAGE=en_US">Try 15 min free WiFi</a></div>
+        
+
+        </div> <!-- // promoBox -->
+
+        </div> <!-- col2 -->
+    
+   <div class="col2 right">
+
+      <h1>Next time connect for free:<br /> <small>Choose KPN and access all our WiFi hotspots for free<br />More info on: <a href="http://kpn.com/fon">kpn.com/fon</a></small></h1>
+
+        	<div class="buyNow">
+            <div class="pass1">
+                <strong>Get online now!</strong>
+                <p>Choose the best pass option for you and start surfing!</p>     
+                </div>
+            <div class="pass2">
+                 <div class="product">
+                   <span class="timing">1 hour</span>
+                   <span class="method">??SMS|E-Payment_en_US??</span>
+                   <span class="price">EUR3.00</span>
+                   <a href="https://kpn.purchases.fon.com/purchase-access?WISPURL=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Drpp-login_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;WISPURLHOME=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Dwelcome_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;EXPIRATION_DATE=1546966718267&amp;SMSCONFIRM=false&amp;LANGUAGE=en_US&amp;AP_MAC=02-00-00-2E-3F-7E&amp;DEV_MAC=00-08-CA-4E-90-99&amp;PRODUCT_ID=AccessPass_1h_SMS_FonComm%7CAccessPass_1h_KPN&amp;TOKEN=b36dc23c42446b3bf7cac47b2be2836dcd21b936&amp;LANGUAGE=en_US" onmousedown="javascript:_paq.push([&#39;trackPageView&#39;, &#39;cp_loggedoff_AccessPass_1h_SMS_FonComm|AccessPass_1h_KPN&#39;]);">Buy now!</a>
+               </div>
+             </div>
+            <div class="pass2">
+                 <div class="product">
+                   <span class="timing">1 day</span>
+                   <span class="method">??E-Payment_en_US??</span>
+                   <span class="price">EUR4.90</span>
+                   <a href="https://kpn.purchases.fon.com/purchase-access?WISPURL=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Drpp-login_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;WISPURLHOME=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Dwelcome_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;EXPIRATION_DATE=1546966718267&amp;SMSCONFIRM=false&amp;LANGUAGE=en_US&amp;AP_MAC=02-00-00-2E-3F-7E&amp;DEV_MAC=00-08-CA-4E-90-99&amp;PRODUCT_ID=AccessPass_1d_KPN&amp;TOKEN=b326f48f1ad0c3196d23327e7c4678a8749efdba&amp;LANGUAGE=en_US" onmousedown="javascript:_paq.push([&#39;trackPageView&#39;, &#39;cp_loggedoff_AccessPass_1d_KPN&#39;]);">Buy now!</a>
+               </div>
+             </div>
+            <div class="pass2">
+                 <div class="product">
+                   <span class="timing">5 days</span>
+                   <span class="method">??E-Payment_en_US??</span>
+                   <span class="price">EUR14.90</span>
+                   <a href="https://kpn.purchases.fon.com/purchase-access?WISPURL=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Drpp-login_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;WISPURLHOME=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Dwelcome_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;EXPIRATION_DATE=1546966718267&amp;SMSCONFIRM=false&amp;LANGUAGE=en_US&amp;AP_MAC=02-00-00-2E-3F-7E&amp;DEV_MAC=00-08-CA-4E-90-99&amp;PRODUCT_ID=AccessPassBundle_5x1d_KPN&amp;TOKEN=0c35564441e38f4b33d70a30a3fcf0e2d5067af5&amp;LANGUAGE=en_US" onmousedown="javascript:_paq.push([&#39;trackPageView&#39;, &#39;cp_loggedoff_AccessPassBundle_5x1d_KPN&#39;]);">Buy now!</a>
+               </div>
+             </div>
+            <div class="pass2">
+                 <div class="product">
+                   <span class="timing">30 days</span>
+                   <span class="method">??E-Payment_en_US??</span>
+                   <span class="price">EUR29.90</span>
+                   <a href="https://kpn.purchases.fon.com/purchase-access?WISPURL=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Drpp-login_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;WISPURLHOME=https%3A%2F%2Fkpn.portal.fon.com%2Fjcp%2F0200002E3F7E0008CA4E9099%3Fres%3Dwelcome_sg%26nas_ip_address%3D213.75.201.87%26useurl%3Dhttp%253A%252F%252Fdetectportal.firefox.com%252Fsuccess.txt&amp;EXPIRATION_DATE=1546966718267&amp;SMSCONFIRM=false&amp;LANGUAGE=en_US&amp;AP_MAC=02-00-00-2E-3F-7E&amp;DEV_MAC=00-08-CA-4E-90-99&amp;PRODUCT_ID=AccessPass_30d_KPN&amp;TOKEN=dbea5b061cbe4383097e2d5e092f0ce42f4aaef5&amp;LANGUAGE=en_US" onmousedown="javascript:_paq.push([&#39;trackPageView&#39;, &#39;cp_loggedoff_AccessPass_30d_KPN&#39;]);">Buy now!</a>
+               </div>
+             </div><!-- // pass2 -->
+            
+       </div><!-- // buyNow -->
+         
+        
+   </div><!-- // col2 -->
+
+        
+    	
+     </div><!-- // Main -->
+
+   
+    
+    </div><!-- // wrap -->
+    
+    
+
+
+<footer>
+<a href="https://fon.com/legal/" target="_blank">Legal notice</a> | <a href="https://support.fon.com/hc/categories/200575272-Access-network" target="_blank">Support</a> | <span id="copyright_year"></span>
+</footer>
+
+</div><!-- // container -->
+
+<div id="aboutfon" class="reveal-modal">
+    <h1>About Fon </h1>
+    <article><h2>Fon is your WiFi network</h2><p>Fon's mission is to blanket the world with WiFi, so you can easily upload pictures, stream music and videos and update your social network profiles from anywhere. Whether you're relaxing in your living room, having a tea at your local coffee shop or shopping in Tokyo, Fon is where you are going.</p><h2>How does Fon work?</h2><p>Fon splits your WiFi signal into two. A private one that is just for you, and a public one, which you share with other Fon members. Both networks are secure.</p><p>As a sharing Fon member, you will be able to enjoy all of the network's hotspots both in The Netherlands and abroad for free. </p><p>Not ready to become a member? We make it easy and affordable for you to connect to the network. Just buy a pass and connect to any of our hotspots!</p><h2>Want to learn more?</h2><p>Visit it us at fon.com or talk to one of the millions of Fon members worldwide active on all the major social networks.</p></article>
+    <a class="close-reveal-modal">×</a>
+  </div>
+
+  <div id="aboutpartner" class="reveal-modal">
+    <h1>About KPN </h1>
+    <article><p>KPN is the leading telecommunications and IT service provider in The Netherlands, offering wireline and wireless telephony, internet and TV to consumers. KPN offers business customers complete telecommunications and IT solutions. KPN IT Solutions (previously known as Getronics) offers global IT services and is the Benelux market leader in the area of infrastructure and network related IT solutions. </p><p>In Belgium, KPN pursues a multi-brand strategy in its mobile operations and holds number three market positions through BASE. KPN provides wholesale network services to third parties and operates an efficiënt IP-based infrastructure with global scale in international wholesale through iBasis.</p><p>At December 31st, 2012, KPN served 45,1 million customers, of which 36.7 million were in wireless services, 3,9 million in wireline voice, 2.7 million in broadband Internet and 1.8 million in TV.</p></article>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  
+
+    <!-- WISPr message -->
+	<span class="displayNone"><!--<?xml version="1.0" encoding="UTF-8"?>
+ <WISPAccessGatewayParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.acmewisp.com/WISPAccessGatewayParam.xsd">
+ <Redirect>
+ <AccessProcedure>1.0</AccessProcedure>
+ <LoginURL>https://kpn.portal.fon.com/jcp/0200002E3F7E0008CA4E9099?res=login_sg&amp;nas_ip_address=213.75.201.87&amp;useurl=http%3A%2F%2Fdetectportal.firefox.com%2Fsuccess.txt</LoginURL>
+<AbortLoginURL>https://kpn.portal.fon.com/jcp/0200002E3F7E0008CA4E9099?res=logoff_sg&amp;nas_ip_address=213.75.201.87&amp;token=154696725848146a9dbd58730625b3beb5e88cb7cd75f37bc24e9ad&amp;useurl=http%3A%2F%2Fdetectportal.firefox.com%2Fsuccess.txt</AbortLoginURL>
+<MessageType>100</MessageType>
+<ResponseCode>0</ResponseCode>
+<AccessLocation>FonKPN:NL</AccessLocation>
+</Redirect>
+</WISPAccessGatewayParam>--></span>
+
+
+
+<!-- Piwik code: added on 2014 March,18 -->
+<span>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.fon.com"]);
+  _paq.push(["setDomains", ["*.fon.com"]]);
+  _paq.push(['setDocumentTitle', "cp_residential"]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+    (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.fon.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "60"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; 
+    g.type="text/javascript";
+    g.defer=true; 
+    g.async=true; 
+    g.src=u+"piwik.js"; 
+    s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+</span>
+
+<!-- End Piwik Code -->
+
+<!-- // GDPR Modal -->
+<div id="ex1" class="modal">
+            
+    <div class="gdpr_title">Basic information on data protection</div> 
+    <!-- // GDPR default users -->
+    <span id="default_gdpr" class="gdpr_text">
+       <div class="gdpr_content"><table id="gdpr_table"> <tbody> <tr> <td>Data Controller</td> <td>FON WIRELESS LIMITED.</td> </tr> <tr> <td>Purpose</td> <td>Managing subscription of the end users and their identification.</td> </tr> <tr> <td>Legitimation</td> <td>Execution of a contract </td> </tr> <tr> <td>Recipients</td> <td>The personal data will share to Fon’s Group, competent Public Administrations in accordance with the applicable law and Fon’s Partners (Telecom Operators) in the territory where we offer and you get access to the Fon’s services, as well as to the data processors under the provision of its services (see additional information section below).</td> </tr> <tr> <td>Rights</td> <td>You have the right to access, rectify and erase personal data, as well as other rights, as explained in the additional information section below. </td> </tr> <tr> <td>Additional Information</td> <td>You can consult additional and detailed information on Data Protection in our website: <a href="https://fon.com/privacy-policy/" target="_blank">Privacy Policy of Fon</a></td> </tr> </tbody> </table></div>
+       <div class="gdpr_checkbox" id="fon_check">
+        <label class="gdpr_label">
+          <input type="checkbox" class="myCheck01" />
+          <span>By completing and submitting this form, you agree that you have read and understand  <a href="https://corp.fon.com/legal-cp/" target="_blank">Terms of Use of Fon</a>, as well as all other applicable policies.</span>
+         </label>
+      </div>
+    </span>
+  
+       <fieldset>
+        <input type="hidden" name="language" id="language" value="en_US" />
+        <input value="Ok" id="login" type="submit" form="loginForm" disabled="disabled" />
+      </fieldset>
+
+ </div> <!-- // MODAl -->
+
+    
+    </body>
+
+<!-- Mirrored from kpn.portal.fon.com/jcp/0200002E3F7E0008CA4E9099?res=welcome_sg&nas_ip_address=213.75.201.87&useurl=http%3A%2F%2Fdetectportal.firefox.com%2Fsuccess.txt by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jan 2019 16:53:57 GMT -->
+</html>
